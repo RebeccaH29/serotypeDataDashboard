@@ -1,0 +1,74 @@
+.container {
+    margin-top: 10px;
+}
+
+svg {
+  margin: 0 auto 10px;
+  display: block;
+  max-width: 100%;
+}
+
+.birthViz {
+    height: 1200px;
+    width: 1200px;
+    margin: 0px;
+}
+
+g {
+    font-size: 10px;
+}
+
+svg#yearScale {
+    height: 60px;
+    max-width: 100%;
+}
+
+.tick line {
+    stroke: #ccc;
+    stroke-dasharray: 10, 5;
+}
+
+svg#scaleYears>g>g.tick line {
+    stroke: gray;
+}
+
+svg#scaleYears>g > g.tick text {
+    transform: rotate(-50deg);
+    text-anchor: end;
+}
+
+rect {
+    transition: all 0.30s;
+    -moz-transition: all 0.30s;
+}
+
+rect:hover {
+    fill:#004080;
+}
+
+div#tooltip {	
+    position: fixed;
+    left: 150px;
+    top: 250px;			
+    text-align: center;			
+    width: 120px;					
+    height: 60px;					
+    padding: 2px;				
+    font: 12px sans-serif;		
+    background: #ddd;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}
+
+tr {
+    border: 1px gray solid;
+}
+
+td {
+    font-size: 10px;
+}
+
+td.data {
+    font-weight: 900;
+}
